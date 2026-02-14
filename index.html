@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<title>Fiszki – Czasowniki nieregularne</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: #f5f7fa;
+}
+.container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 20px;
+padding: 20px;
+}
+.card {
+perspective: 1000px;
+cursor: pointer;
+margin: 0 1rem 2rem 1rem;
+}
+.card-inner {
+position: relative;
+width: 100%;
+height: 120px;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+transform-origin: center center;
+}
+.card.flipped .card-inner {
+transform: rotateY(180deg);
+}
+.card-face {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+font-size: 16px;
+box-sizing: border-box;
+}
+.front {
+background: #ffffff;
+}
+.back {
+background: #4f8ef7;
+color: white;
+transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<h2 style="text-align:center;">Fiszki – kliknij kartę, aby ją odwrócić</h2>
+<div class="container">
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">robić</div>
+<div class="card-face back">make – made – made</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">tracić, gubić</div>
+<div class="card-face back">lose – lost – lost</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">znaczyć, oznaczać</div>
+<div class="card-face back">mean – meant – meant</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">spotykać</div>
+<div class="card-face back">meet – met – met</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">płacić</div>
+<div class="card-face back">pay – paid – paid</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">udowadniać</div>
+<div class="card-face back">prove – proved – proven</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">kłaść</div>
+<div class="card-face back">put – put – put</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">rzucać, opuszczać</div>
+<div class="card-face back">quit – quit – quit</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">czytać</div>
+<div class="card-face back">read – read – read</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">jeździć</div>
+<div class="card-face back">ride – rode – ridden</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">dzwonić</div>
+<div class="card-face back">ring – rang – rung</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">podnosić się, wzrastać</div>
+<div class="card-face back">rise – rose – risen</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">biec</div>
+<div class="card-face back">run – ran – run</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">piłować</div>
+<div class="card-face back">saw – sawed – sawn</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">mówić</div>
+<div class="card-face back">say – said – said</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">widzieć</div>
+<div class="card-face back">see – saw – seen</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">szukać</div>
+<div class="card-face back">seek – sought – sought</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">sprzedawać</div>
+<div class="card-face back">sell – sold – sold</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">wysyłać</div>
+<div class="card-face back">send – sent – sent</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">ustawiać</div>
+<div class="card-face back">set – set – set</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">trząść, potrząsać</div>
+<div class="card-face back">shake – shook – shaken</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">zrzucać, pozbywać się</div>
+<div class="card-face back">shed – shed – shed</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">świecić, błyszczeć</div>
+<div class="card-face back">shine – shone – shone</div>
+</div>
+</div>
+
+<div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">strzelać</div>
+<div class="card-face back">shoot – shot – shot</div>
+</div>
+</div>
+  
+ <div class="card" onclick="this.classList.toggle('flipped')">
+<div class="card-inner">
+<div class="card-face front">lose</div>
+<div class="card-face back">loose – lost – lost</div>
+</div>
+</div> 
+
+</div>
+</body>
+</html>
